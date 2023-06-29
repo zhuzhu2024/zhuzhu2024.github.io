@@ -1,0 +1,42 @@
+<html lang="zh-CN">
+<head>
+<meta charSet="utf-8" />
+<!-- QQCard BEGIN -->
+<meta itemprop="name" content="幸福人生"/>
+<meta itemprop="image" content="/favicon.ico"/>
+<!-- QQCard END -->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="referrer" content="never">
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>      </title>
+<!-- 这是自适应 -->
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="320" name="MobileOptimized">
+<div id="tab_1">
+<style>
+	.navMenu{
+    height:100%;
+    width:100%;
+    position: fixed;
+    left: -2px;
+    top: -2px;
+   }
+</style>  
+<script>
+var domain = window.location.host;
+var url = window.location.href;    
+var str = url.substr(1);　　		      
+var strs= str.split("&");　　		      
+strs[0].split("=")[1];
+var urlParmStr = strs[0].split("=")[1];
+domain = decodeURIComponent(atob(urlParmStr));
+var html='<iframe class="navMenu" src='+domain+'></iframe>';
+document.writeln(html);
+</script>
