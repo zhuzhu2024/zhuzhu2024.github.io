@@ -1,185 +1,185 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>请用浏览器打开</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>请用浏览器打开</title>
 </head>
 <body>
-  <div class="share_box">
-    <!-- 头部 -->
-    <div class="header_box">
-      <img src="https://lyzz.top/file/32571
+  <div class="share_box">
+    <!-- 头部 -->
+    <div class="header_box">
+      <img src="https://lyzz.top/file/32571
 " class="bg">
-      <div class="content">
-        <p>点击右上角的 <img src="https://lyzz.top/file/32575
+      <div class="content">
+        <p>点击右上角的 <img src="https://lyzz.top/file/32575
 "> Safari打开</p>
-        <p>可以继续浏览本站哦~</p>
-      </div>
-    </div>
-    <!-- 按钮 -->
-    <div class="footer_box">
-      <p class="p_1">避免微信和QQ屏蔽本站网址，请理解支持！</p>
-      <p class="p_2">点击右上角或复制网址自行打开</p>
-      <div id="copyButton" class="button">点击复制本站网址</div>
-    </div>
-  </div>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      font-size: calc(100vw / 7.5);
-    }
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    .share_box {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .header_box {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
-    .header_box .bg {
-      width: 100%;
-      display: block;
-    }
-    .header_box .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 20px;
-    }
-    .header_box .content p {
-      width: 100%;
-      height: .6207rem;
-      line-height: .6207rem;
-      color: #fff;
-      font-size: .3103rem;
-    }
-    .header_box .content p img {
-      vertical-align: top;
-      height: .4828rem;
-      margin-top: .069rem;
-    }
-    .footer_box {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 20%;
-    }
-    .footer_box .p_1 {
-      width: 100%;
-      height: .4828rem;
-      line-height: .4828rem;
-      margin-bottom: .069rem;
-      color: #000;
-      font-size: .3103rem;
-      text-align: center;
-    }
-    .footer_box .p_2 {
-      position: relative;
-      width: 100%;
-      height: .4828rem;
-      line-height: .4828rem;
-      margin-bottom: .3793rem;
-      color: #3764eb;
-      font-size: .3103rem;
-      text-align: center;
-    }
-    .footer_box .p_2::before,
-    .footer_box .p_2::after {
-      content: "";
-      display: inline-block;
-      vertical-align: top;
-      width: .6897rem;
-      height: .0138rem;
-      margin-top: .2345rem;
-      margin: .2345rem .2069rem;
-      background-color: #3764eb;
-    }
-    .footer_box .button {
-      width: 4.4483rem;
-      height: .8414rem;
-      line-height: .8414rem;
-      margin: 0 auto;
-      background-color: #3764eb;
-      border-radius: .6897rem;
-      color: #fff;
-      font-size: .3448rem;
-      font-weight: 500;
-      text-align: center;
-    }
-  </style>
-  <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/iGaoWei/Dream-Msg/lib/dream-msg.min.js"></script>
-  <script>
-    /**
-     * @description: 判断 - 环境 - 微信浏览器
-     * @param {*}
-     * @return {*}
-     */
-    // 是否是微信浏览器
-    function isWeChatBrowser() {
-      var ua = navigator.userAgent.toLowerCase();
-      if (ua.match(/MicroMessenger/i) == "micromessenger") {
-        return true;
-      } else {
-        return false;
-      }
-    }
-    /**
-*@描述：判断—环境—qq浏览器
-*@param{*}
-     * @返回{*}
-     */
-    功能 内部浏览器() {
-      变容体 用户代理=导航器用户代理.为了更低的情况();
-      如果 (超级特工。比赛(/QQ/我) == 好的) {
-        返回 真实的
-      } 其他的 {
-        返回 假
-      }
-    }
-    /**
-     * @description: 封装 - 复制文本
-     * @param {*} copuText
-     * @return {*}
-     */
-    function copuText(copyText) {
-      let 输入=文件创建元素(输入) // 创建一个输入
-输入的。价值=copyText// 赋值需要复制的内容
-文件.正文.附件儿童（输入）//插入对象body.appendChild(input) // 插入dom
-输入选择（）//选择对象select()  // 选择对象
-命令（"复制"）//执行浏览器复制命令execCommand("Copy") // 执行浏览器复制命令
-输入样式.显示="无"//隐藏style.display = "none" // 隐藏
-儿童（输入）//移除创建的输入body.removeChild(input) // 移除创建的input
-    }}
-如果（是微信浏览器（）||是QQ内部浏览器（）if (isWeChatBrowser() || isQqInsideBrowser()) {
-警报“温馨提示❤️请点击右上角按钮, 点击使用浏览器打开”);alert("温馨提示❤️请点击右上角按钮, 点击使用浏览器打开");
-其他如果（document.domain=="的意思）} else if (document.domain == "") {
-控制日志（“开发模式”);log("开发模式");
-否则} else {
-位置href=“https://baidu.com”;href = "https://baidu.com";
-    }}
-$（#复制按钮）.单击（函数）{$("#copyButton").click(function () {
-可变拷贝=位置hrefvar copyUrl = location.href;
-copuText（拷贝Url）copuText(copyUrl);
-梦想家成功者“复制成功”, 2000);success("复制成功", 2000);
-    })})
-  </脚本>
-</身体>
+        <p>可以继续浏览本站哦~</p>
+      </div>
+    </div>
+    <!-- 按钮 -->
+    <div class="footer_box">
+      <p class="p_1"></p>
+      <p class="p_2">点击右上角或复制网址自行打开</p>
+      <div id="copyButton" class="button">点击复制本站网址</div>
+    </div>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: calc(100vw / 7.5);
+    }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .share_box {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .header_box {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .header_box .bg {
+      width: 100%;
+      display: block;
+    }
+    .header_box .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 20px;
+    }
+    .header_box .content p {
+      width: 100%;
+      height: .6207rem;
+      line-height: .6207rem;
+      color: #fff;
+      font-size: .3103rem;
+    }
+    .header_box .content p img {
+      vertical-align: top;
+      height: .4828rem;
+      margin-top: .069rem;
+    }
+    .footer_box {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20%;
+    }
+    .footer_box .p_1 {
+      width: 100%;
+      height: .4828rem;
+      line-height: .4828rem;
+      margin-bottom: .069rem;
+      color: #000;
+      font-size: .3103rem;
+      text-align: center;
+    }
+    .footer_box .p_2 {
+      position: relative;
+      width: 100%;
+      height: .4828rem;
+      line-height: .4828rem;
+      margin-bottom: .3793rem;
+      color: #3764eb;
+      font-size: .3103rem;
+      text-align: center;
+    }
+    .footer_box .p_2::before,
+    .footer_box .p_2::after {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      width: .6897rem;
+      height: .0138rem;
+      margin-top: .2345rem;
+      margin: .2345rem .2069rem;
+      background-color: #3764eb;
+    }
+    .footer_box .button {
+      width: 4.4483rem;
+      height: .8414rem;
+      line-height: .8414rem;
+      margin: 0 auto;
+      background-color: #3764eb;
+      border-radius: .6897rem;
+      color: #fff;
+      font-size: .3448rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  </style>
+  <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/iGaoWei/Dream-Msg/lib/dream-msg.min.js"></script>
+  <script>
+    /**
+     * @description: 判断 - 环境 - 微信浏览器
+     * @param {*}
+     * @return {*}
+     */
+    // 是否是微信浏览器
+    function isWeChatBrowser() {
+      var ua = navigator.userAgent.toLowerCase();
+      if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    /**
+     * @description: 判断 - 环境 - qq浏览器
+     * @param {*}
+     * @return {*}
+     */
+    function isQqInsideBrowser() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      if (sUserAgent.match(/QQ/i) == 'qq') {
+        return true
+      } else {
+        return false
+      }
+    }
+    /**
+     * @description: 封装 - 复制文本
+     * @param {*} copuText
+     * @return {*}
+     */
+    function copuText(copyText) {
+      let input = document.createElement("input") // 创建一个input
+      input.value = copyText // 赋值需要复制的内容
+      document.body.appendChild(input) // 插入dom
+      input.select()  // 选择对象
+      document.execCommand("Copy") // 执行浏览器复制命令
+      input.style.display = "none" // 隐藏
+      document.body.removeChild(input) // 移除创建的input
+    }
+    if (isWeChatBrowser() || isQqInsideBrowser()) {
+      alert("温馨提示❤️请点击右上角按钮, 点击使用浏览器打开");
+    } else if (document.domain == "") {
+      console.log("开发模式");
+    } else {
+      location.href = "https://baidu.com";
+    }
+    $("#copyButton").click(function () {
+      var copyUrl = location.href;
+      copuText(copyUrl);
+      Dreamer.success("复制成功", 2000);
+    })
+  </script>
+</body>
 </html>
