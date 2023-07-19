@@ -1,64 +1,64 @@
-<!文档类型
-<html 郎="zh-cn">
-<头>
-  <元数据沙尔塞=“UTF-8”>
-  <元数据高温当量="x—下装甲兼容"内容="工业=边缘">
-  <元数据姓名=视窗 内容=“宽度=设备宽度，初始比例=1.0”>
-<<标题>请用浏览器打开</标题>>请用浏览器打开</标题><标题>请用浏览器打开</标题>
-</</head>>
-<身体>
-  <迪夫班级=共享框>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>请用浏览器打开</title>
+</head>
+<body>
+  <div class="share_box">
     <!-- 头部 -->
-    <迪夫班级="表头框">
-      <img src=“https://lyzz.top/file/32571
-“ 班级=大块头>
-<类别="内容"<迪夫类=内容>
-<p>点击右上角的<img src=“https://lyzz.top/file/32571<p>点击右上角的 <img src=“https://lyzz.top/file/32571
-">"浏览器打开</p>
-<p>可以继续浏览本站哦~</p><p>可以继续浏览本站哦~</p>
-</迪夫</迪夫>
-</迪夫</迪夫>
-    <!-- 按钮 --><!-- 按钮 -->
-<分区类=页脚框><迪夫班级=页脚框>
-<Ｐ类="第1页”>避免微信和qq屏蔽本站网址，请理解支持！</p><p 班级="p_1">避免微信和qq屏蔽本站网址，请理解支持！</p>
-<Ｐ类=="二">点击右上角或复制网址自行打开</p><p 班级=第二步>点击右上角或复制网址自行打开</p>
-点击复制本站网址<迪夫身份证件="复制按钮" 班级=按钮>点击复制本站网址</迪夫>
-</迪夫</迪夫>
-  </迪夫></迪夫>
-<风格<风格>
-    * {{
-保证金：保证金：0；
-填充：0填充：0
-箱型尺寸：框型；箱型尺寸：边框型；
-    }}
-html{{
-正面尺寸：计算机（100伏/7.5）；字体尺寸：钙（100伏/7.5）；
-    }}
--html，
-身体
-宽度：100%
-高度：100%
-溢出：隐藏的；
+    <div class="header_box">
+      <img src="https://lyzz.top/file/32571
+" class="bg">
+      <div class="content">
+        <p>点击右上角的 <img src="https://lyzz.top/file/32575
+"> Safari打开</p>
+        <p>可以继续浏览本站哦~</p>
+      </div>
+    </div>
+    <!-- 按钮 -->
+    <div class="footer_box">
+      <p class="p_1">避免微信和QQ屏蔽本站网址，请理解支持！</p>
+      <p class="p_2">点击右上角或复制网址自行打开</p>
+      <div id="copyButton" class="button">点击复制本站网址</div>
+    </div>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: calc(100vw / 7.5);
+    }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
     .share_box {
-职位：相对的；
-宽度：100瓦
-高度：100伏小时；
-溢出：隐藏的；
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
     }
-    .表头框{
-宽度：100%
-高度：自动
-溢出：隐藏的；
+    .header_box {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
     }
-    .表头框.bg {
-宽度：100%
-显示：块；
+    .header_box .bg {
+      width: 100%;
+      display: block;
     }
-    .表头框.内容
-位置：绝对的；
-最上面的：0个；
-左：0
+    .header_box .content {
+      position: absolute;
+      top: 0;
+      left: 0;
       right: 0;
       bottom: 0;
       padding: 20px;
@@ -142,16 +142,16 @@ html{{
       }
     }
     /**
-     * @description: 判断 - 环境 - qq浏览器
-     * @param {*}
-     * @return {*}
+*@描述：判断—环境—qq浏览器
+*@param{*}
+     * @返回{*}
      */
-    function isQqInsideBrowser() {
-      var sUserAgent = navigator.userAgent.toLowerCase();
-      if (sUserAgent.match(/QQ/i) == 'qq') {
-        return true
-      } else {
-        return false
+    功能 内部浏览器() {
+      变容体 用户代理=导航器用户代理.为了更低的情况();
+      如果 (超级特工。比赛(/QQ/我) == 好的) {
+        返回 真实的
+      } 其他的 {
+        返回 假
       }
     }
     /**
@@ -160,26 +160,26 @@ html{{
      * @return {*}
      */
     function copuText(copyText) {
-      let input = document.createElement("input") // 创建一个input
-      input.value = copyText // 赋值需要复制的内容
-      document.body.appendChild(input) // 插入dom
-      input.select()  // 选择对象
-      document.execCommand("Copy") // 执行浏览器复制命令
-      input.style.display = "none" // 隐藏
-      document.body.removeChild(input) // 移除创建的input
-    }
-    if (isWeChatBrowser() || isQqInsideBrowser()) {
-      alert("温馨提示❤️请点击右上角按钮, 点击使用浏览器打开");
-    } else if (document.domain == "") {
-      console.log("开发模式");
-    } else {
-      location.href = "https://baidu.com";
-    }
-    $("#copyButton").click(function () {
-      var copyUrl = location.href;
-      copuText(copyUrl);
-      Dreamer.success("复制成功", 2000);
-    })
-  </script>
-</body>
+      let 输入=文件创建元素(输入) // 创建一个输入
+输入的。价值=copyText// 赋值需要复制的内容
+文件.正文.附件儿童（输入）//插入对象body.appendChild(input) // 插入dom
+输入选择（）//选择对象select()  // 选择对象
+命令（"复制"）//执行浏览器复制命令execCommand("Copy") // 执行浏览器复制命令
+输入样式.显示="无"//隐藏style.display = "none" // 隐藏
+儿童（输入）//移除创建的输入body.removeChild(input) // 移除创建的input
+    }}
+如果（是微信浏览器（）||是QQ内部浏览器（）if (isWeChatBrowser() || isQqInsideBrowser()) {
+警报“温馨提示❤️请点击右上角按钮, 点击使用浏览器打开”);alert("温馨提示❤️请点击右上角按钮, 点击使用浏览器打开");
+其他如果（document.domain=="的意思）} else if (document.domain == "") {
+控制日志（“开发模式”);log("开发模式");
+否则} else {
+位置href=“https://baidu.com”;href = "https://baidu.com";
+    }}
+$（#复制按钮）.单击（函数）{$("#copyButton").click(function () {
+可变拷贝=位置hrefvar copyUrl = location.href;
+copuText（拷贝Url）copuText(copyUrl);
+梦想家成功者“复制成功”, 2000);success("复制成功", 2000);
+    })})
+  </脚本>
+</身体>
 </html>
