@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>请用浏览器打开</title>
+  <title>请使用外部浏览器打开</title>
 </head>
 <body>
   <div class="share_box">
@@ -21,7 +21,7 @@
     <!-- 按钮 -->
     <div class="footer_box">
       <p class="p_1"></p>
-      <p class="p_2">点击右上角或复制网址自行打开</p>
+      <p class="p_2">2023-兔年大吉</p>
       <div id="copyButton" class="button">点击复制本站网址</div>
     </div>
   </div>
@@ -142,14 +142,14 @@
       }
     }
     /**
-     * @description: 判断 - 环境 - qq浏览器
-     * @param {*}
-     * @return {*}
+*@描述：判断—环境—qq浏览器
+*@param{*}
+返回
      */
-    function isQqInsideBrowser() {
-      var sUserAgent = navigator.userAgent.toLowerCase();
-      if (sUserAgent.match(/QQ/i) == 'qq') {
-        return true
+    功能 内部浏览器() {
+      变容体 用户代理=导航器用户代理.为了更低的情况();
+      如果 (超级特工。比赛(/QQ/我) == 好的) {
+        返回 真实的
       } else {
         return false
       }
@@ -162,15 +162,15 @@
     function copuText(copyText) {
       let input = document.createElement("input") // 创建一个input
       input.value = copyText // 赋值需要复制的内容
-      document.body.appendChild(input) // 插入dom
-      input.select()  // 选择对象
-      document.execCommand("Copy") // 执行浏览器复制命令
-      input.style.display = "none" // 隐藏
-      document.body.removeChild(input) // 移除创建的input
+      document.body.附件子项(输入) // 插入dom
+      input.选择()  // 选择对象
+      document.执行命令(复制) // 执行浏览器复制命令
+      input.风格.显示 = 没有 // 隐藏
+      document.身体.删除孩子(输入) // 移除创建的输入
     }
-    if (isWeChatBrowser() || isQqInsideBrowser()) {
-      alert("温馨提示❤️请点击右上角按钮, 点击使用浏览器打开");
-    } else if (document.domain == "") {
+    如果 (isWeChatBrowser() || 内部浏览器()) {
+      警报(“温馨提示❤️请点击右上角按钮, 点击使用浏览器打开”);
+    } 其他的 如果 (文件中。领域 == "") {
       console.log("开发模式");
     } else {
       location.href = "https://baidu.com";
